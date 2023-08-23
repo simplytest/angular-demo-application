@@ -1,1 +1,15 @@
 <app-header/>
+
+<div class="flexrow">
+	<div class="container">
+		<app-friend-box/>
+
+		<app-card
+			*ngFor="let i of [0, 1, 2, 3, 4, 5]"
+			[id]="postImg[i]"
+			[text]="postText[i]"
+		></app-card>
+	</div>
+	
+	<app-proposals/>
+</div>

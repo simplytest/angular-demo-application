@@ -1,0 +1,28 @@
+.friend-row {
+	display: flex;
+	overflow: hidden;
+}
+
+.empty {
+	color: white;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.friend {
+	img {
+		height: 60px;
+		width: 60px;
+		border-radius: 50%;
+		object-fit: cover;
+	}
+
+	color: white;
+	font-size: small;
+	text-align: center;
+
+	display: flex;
+	flex-direction: column;
+
+	padding: 10px;
+}

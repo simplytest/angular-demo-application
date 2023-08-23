@@ -1,0 +1,67 @@
+.card-container
+{
+	min-height: 640px;
+	overflow: hidden;
+	position: relative;
+
+	button
+	{
+		color: #123456;
+		background-color: lightgreen;
+		
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: large;
+		font-weight: bold;
+
+		align-items: center;
+		justify-content: center;
+		vertical-align: middle;
+
+		border: unset;
+		border-radius: 20px;
+
+		height: 10%;
+		width: 50%;
+
+		position: absolute;
+		bottom: 0px;
+
+		&:first-child
+		{
+			left: 0px;
+		}
+
+		&:last-child
+		{
+			right: 0px;
+		}
+
+		&:hover
+		{
+			background-color: yellow;
+		}
+
+		mat-icon
+		{
+			font-size: large;
+			
+			align-items: center;
+			justify-content: center;
+			vertical-align: middle;
+		}
+	}
+}
+
+.card-picture
+{
+	border-radius: 20px;
+	padding: 5%;
+	width: 90%;
+}
+
+.card-text
+{
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+}

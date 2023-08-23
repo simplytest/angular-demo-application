@@ -1,0 +1,10 @@
+<div class="profile-row margin-bottom-15">
+	<img src="/assets/images/cards/{{id}}.webp"/>
+
+	<div class="name">
+		<b>{{name}}</b><br/>
+		<span class="description">{{description}}</span>
+	</div>
+
+	<a id="follow" *ngIf="canFollow" (click)="addFriend(name, description, id)">Folgen</a>
+</div>

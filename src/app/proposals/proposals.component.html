@@ -1,0 +1,12 @@
+<app-profile-row [canFollow]="false" [id]="0" [name]="names[0]" [description]="texts[0]"/>
+
+<div class="margin-bottom-15">
+	<b>Freundesvorschl&auml;ge</b>
+</div>
+
+<app-profile-row
+	*ngFor="let i of [1, 2, 3, 4, 5]"
+	[id]="i"
+	[name]="names[i]"
+	[description]="texts[i]">
+</app-profile-row>

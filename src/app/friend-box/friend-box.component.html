@@ -1,0 +1,9 @@
+<div class="default-card padding-15 friend-row">
+	<div *ngIf="friendService.names.length == 0" class="empty">
+		Du hast leider noch keine Freunde. 😢
+	</div>
+
+	<div class="friend" *ngFor="let name of friendService.names; let i = index">
+		<img src="{{friendService.getImage(i)}}"/> {{name}}
+	</div>
+</div>

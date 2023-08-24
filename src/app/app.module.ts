@@ -1,18 +1,29 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { AppComponent } from "./app.component";
+import { AppRoutingModule } from "./app-routing.module";
+import { BrowserModule } from "@angular/platform-browser";
+import { CardComponent } from "./card/card.component";
+import { FriendBoxComponent } from "./friend-box/friend-box.component";
+import { HeaderComponent } from "./header/header.component";
+import { MatIconModule } from "@angular/material/icon";
+import { NgModule } from "@angular/core";
+import { ProfileRowComponent } from "./profile-row/profile-row.component";
+import { ProposalsComponent } from "./proposals/proposals.component";
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		CardComponent,
+		FriendBoxComponent,
+		HeaderComponent,
+		ProfileRowComponent,
+		ProposalsComponent
+	],
+	imports: [
+		AppRoutingModule,
+		BrowserModule,
+		MatIconModule
+	],
+	providers: [],
+	bootstrap: [AppComponent]
 })
 export class AppModule { }

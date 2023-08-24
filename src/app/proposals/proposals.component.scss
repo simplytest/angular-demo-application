@@ -1,0 +1,19 @@
+.profile-row {
+	align-items: center;
+	display: flex;
+	font-family: Arial, Helvetica, sans-serif;
+
+	img {
+		height: 60px;
+		width: 60px;
+		border-radius: 50%;
+		object-fit: cover;
+		object-position: right;
+		margin-right: 10px;
+	}
+
+	.description {
+		color: rgba(0, 0, 0, 0.5);
+		font-size: small;
+	}
+}

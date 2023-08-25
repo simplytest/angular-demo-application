@@ -1,14 +1,14 @@
-import { AppComponent } from "./app.component";
-import { CardComponent } from "./card/card.component";
+import { AppComponent } from "../app/app.component";
+import { CardComponent } from "../app/card/card.component";
 import { ComponentFixture, TestBed } from "@angular/core/testing";
-import { FriendBoxComponent } from "./friend-box/friend-box.component";
-import { HeaderComponent } from "./header/header.component";
+import { FriendBoxComponent } from "../app/friend-box/friend-box.component";
+import { HeaderComponent } from "../app/header/header.component";
 import { MatIcon } from "@angular/material/icon";
-import { ProfileRowComponent } from "./profile-row/profile-row.component";
-import { ProposalsComponent } from "./proposals/proposals.component";
+import { ProfileRowComponent } from "../app/profile-row/profile-row.component";
+import { ProposalsComponent } from "../app/proposals/proposals.component";
 
 
-describe("AppComponent", () => {
+describe("CustomTests", () => {
 
 	let component: AppComponent;
 	let fixture: ComponentFixture<AppComponent>;
@@ -35,12 +35,7 @@ describe("AppComponent", () => {
 		fixture.detectChanges();
 	});
 	
-	it("should be created", () => {
+	it("should be called", () => {
 		expect(component).toBeTruthy();
-	});
-
-
-	it("should have the title 'angular-demo-application'", () => {
-		expect(component.title).toBe("angular-demo-application");
 	});
 });

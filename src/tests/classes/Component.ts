@@ -1,9 +1,7 @@
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 import { Type } from "@angular/core";
 
-
 export class Component<T> {
-
 	protected readonly fixture: ComponentFixture<T>;
 
 	constructor(component: Type<T>) {

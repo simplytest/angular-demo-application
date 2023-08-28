@@ -1,11 +1,12 @@
 import { AppComponent } from "./app.component";
-import { CardComponent } from './card/card.component';
+import { CardComponent } from "./card/card.component";
 import { ComponentFixture, TestBed } from "@angular/core/testing";
-import { FriendBoxComponent } from './friend-box/friend-box.component';
-import { HeaderComponent } from './header/header.component';
-import { MatIcon } from '@angular/material/icon';
-import { ProfileRowComponent } from './profile-row/profile-row.component';
-import { ProposalsComponent } from './proposals/proposals.component';
+import { FriendBoxComponent } from "./friend-box/friend-box.component";
+import { HeaderComponent } from "./header/header.component";
+import { MatIcon } from "@angular/material/icon";
+import { ProfileRowComponent } from "./profile-row/profile-row.component";
+import { ProposalsComponent } from "./proposals/proposals.component";
+
 
 describe("AppComponent", () => {
 
@@ -36,5 +37,10 @@ describe("AppComponent", () => {
 	
 	it("should be created", () => {
 		expect(component).toBeTruthy();
+	});
+
+
+	it("should have the title 'angular-demo-application'", () => {
+		expect(component.title).toBe("angular-demo-application");
 	});
 });

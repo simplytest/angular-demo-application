@@ -16,7 +16,7 @@ export class Profile extends Component<ProfileRowComponent>  {
 		this.description = profile.description;
 		this.canFollow = profile.canFollow;
 		
-		instance = instance?.with({
+		instance = instance.with({
 			id: this.id,
 			name: this.name,
 			description: this.description,

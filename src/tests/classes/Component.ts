@@ -14,20 +14,20 @@ export class Component<T> {
 	}
 
 	getElement(): any {
-		return this.fixture?.nativeElement;
+		return this.fixture.nativeElement;
 	}
 
 	getInstance(): T {
-		return this.fixture?.componentInstance;
+		return this.fixture.componentInstance;
 	}
 
 	public update() {
-		this.fixture?.detectChanges();
+		this.fixture.detectChanges();
 	}
 
 	public static update(...components: Component<any>[]) {
 		for(let component of components) {
-			component?.get().detectChanges();
+			component.get().detectChanges();
 		}
 	}
 }

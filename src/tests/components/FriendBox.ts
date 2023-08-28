@@ -11,7 +11,11 @@ export class FriendBox extends Component<FriendBoxComponent> {
 	}
 
 	getFriendList(): HTMLDivElement {
-		return this.getElement().querySelector("div.friend");
+		return this.getElement().querySelector("div.friend") as HTMLDivElement;
+	}
+
+	getFriendNodes(): NodeList {
+		return this.getElement().querySelectorAll("div.friend") as NodeList;
 	}
 
 	beingEmtpy(): boolean {

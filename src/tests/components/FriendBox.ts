@@ -25,9 +25,9 @@ export class FriendBox extends Component<FriendBoxComponent> {
 	lengthBeing(length: number): boolean {
 		this.update();
 		let instance = this.getInstance();
-		let namesLength = instance.names.length == length;
-		let textsLength = instance.texts.length == length;
-		let imagesLength = instance.images.length == length;
+		let namesLength = instance.friendService.names.length == length;
+		let textsLength = instance.friendService.texts.length == length;
+		let imagesLength = instance.friendService.images.length == length;
 		return namesLength && textsLength && imagesLength;
 	}
 }

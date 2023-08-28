@@ -88,16 +88,16 @@ describe("Custom component tests:", () => {
 		Component.update(friendBox, profile1, profile2, profile3);
 		
 		let friends = friendBox.getFriendNodes();
+		expect(friends.length).toBe(3);
 		expect(profile1.getFollowLink()).toBeFalsy();
 		expect(profile2.getFollowLink()).toBeFalsy();
 		expect(profile3.getFollowLink()).toBeFalsy();
-		expect(friends.length).toBe(3);
 
 		profile4.clickOnFollow();
 		Component.update(friendBox, profile4);
 		
 		friends = friendBox.getFriendNodes();
-		expect(profile4.getFollowLink()).toBeTruthy();
 		expect(friends.length).toBe(3);
+		expect(profile4.getFollowLink()).toBeTruthy();
 	})
 });

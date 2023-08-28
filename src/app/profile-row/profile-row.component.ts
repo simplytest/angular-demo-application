@@ -22,14 +22,15 @@ export class ProfileRowComponent implements OnInit {
 	addFriend(name: string, description: string, id: number) {
 		let result = this.friendService.addFriend(name, description, id);
 		
-		if(result == 200)
+		if(result == 200) {
 			this.canFollow = false;
-
-		else if(result == 400)
+		}
+		else if(result == 400) {
 			alert("Du kannst nicht mehr als 3 Freunde haben.");
-
-		else
+		}
+		else {
 			alert("Unerwarteter Fehler");
+		}
 	}
 
 	constructor(public friendService: AddFriendService) {}
